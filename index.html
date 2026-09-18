@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Academic website for a Mathematics PhD student at the University of Chicago."
+    />
+    <meta name="theme-color" content="#f6f1e8" />
+    <meta property="og:title" content="Your Name | Mathematics PhD Student" />
+    <meta
+      property="og:description"
+      content="Research, teaching, publications, and contact information."
+    />
+    <meta property="og:type" content="website" />
+    <title>Your Name | Mathematics PhD Student</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/kakeya-construction.png" alt="" />
+        </span>
+        <span>Your Name</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <h1 id="intro-title">Your Name</h1>
+          <p class="lede">
+            I am a PhD student in the Department of Mathematics at the
+            University of Chicago. My interests lie broadly in
+            <strong>[research area]</strong>, with an emphasis on
+            <strong>[specific topic]</strong>.
+          </p>
+          <div class="intro-text">
+            <p>
+              I am currently in my second year of the Mathematics PhD program at
+              the University of Chicago. Before Chicago, I studied
+              <strong>[previous institution or degree]</strong>. I am especially
+              interested in problems that connect <strong>[theme one]</strong>,
+              <strong>[theme two]</strong>, and <strong>[theme three]</strong>.
+              My current research interests include
+              <strong>[primary area]</strong>, <strong>[secondary area]</strong>,
+              and <strong>[current focus]</strong>.
+            </p>
+            <p>
+              This site is a place for research updates, teaching materials, and
+              notes. Please replace bracketed text with confirmed details such as
+              advisor, pronouns, office, and preferred contact information.
+            </p>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img
+            src="assets/headshot.jpg"
+            alt="Portrait of Your Name"
+            onerror="this.onerror=null; this.src='assets/headshot-placeholder.svg';"
+          />
+          <figcaption>Replace with your photo at <code>assets/headshot.jpg</code>.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications & Preprints</h2>
+        <div class="paper-list">
+          <article class="paper">
+            <h3>[Title of Preprint]</h3>
+            <p>
+              Your Name. Brief one-sentence description of the result or topic.
+            </p>
+            <div class="paper-links">
+              <a href="#">PDF</a>
+              <a href="#">arXiv</a>
+              <a href="#">Slides</a>
+            </div>
+          </article>
+          <article class="paper">
+            <h3>[Working Title]</h3>
+            <p>
+              Add upcoming work, expository notes, or remove this item until
+              you have a manuscript to list.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="teaching" aria-labelledby="teaching-title">
+        <h2 id="teaching-title">Teaching</h2>
+        <div class="timeline">
+          <article>
+            <span class="term">Autumn 2026</span>
+            <div>
+              <h3>[Course Title]</h3>
+              <p>Teaching assistant, University of Chicago. Office hours: [time and location].</p>
+            </div>
+          </article>
+          <article>
+            <span class="term">Spring 2026</span>
+            <div>
+              <h3>[Course Title]</h3>
+              <p>Teaching assistant or grader. Add course links or materials as appropriate.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="cv" aria-labelledby="cv-title">
+        <h2 id="cv-title">CV</h2>
+        <p class="single-line">
+          My CV is available here:
+          <a href="assets/cv.pdf">CV PDF</a>.
+        </p>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-grid">
+          <p>
+            Department of Mathematics<br />
+            University of Chicago<br />
+            5734 S. University Avenue<br />
+            Chicago, IL 60637
+          </p>
+          <ul class="contact-list" aria-label="Contact links">
+            <li><a href="mailto:your-email@uchicago.edu">your-email@uchicago.edu</a></li>
+            <li><a href="https://math.uchicago.edu/">Department Profile</a></li>
+            <li><a href="https://github.com/your-github">GitHub</a></li>
+            <li><a href="https://scholar.google.com/">Google Scholar</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Your Name. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
