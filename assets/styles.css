@@ -86,6 +86,14 @@ a:hover {
   color: var(--ink);
 }
 
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
+}
+
 main {
   overflow: hidden;
   max-width: 1040px;
@@ -190,6 +198,17 @@ h3 {
 .section {
   padding: 42px 0;
   border-top: 1px solid var(--line);
+}
+
+.page {
+  padding: 56px 0 64px;
+}
+
+.page-title {
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.1;
+  white-space: normal;
 }
 
 .contact-grid {
@@ -322,5 +341,9 @@ h3 {
 
   .section {
     padding-block: 34px;
+  }
+
+  .page {
+    padding-block: 38px 48px;
   }
 }

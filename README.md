@@ -1,71 +1,47 @@
-# Academic Website
+# mariotomba.github.io
 
-A polished, lightweight academic website for a second-year Mathematics PhD student at the University of Chicago. It is intentionally static: no build tools, no dependencies, and ready for GitHub Pages.
+Personal academic website of Mario Tomba Morillo, PhD student in mathematics at the University of Chicago. It is plain static HTML: no build tools and no dependencies.
 
-## Customize
+## Pages
 
-Edit `index.html` and replace the bracketed placeholders:
+| File                | Content                                  |
+| ------------------- | ---------------------------------------- |
+| `index.html`        | Home: photo, introduction and email      |
+| `publications.html` | Publications and preprints               |
+| `teaching.html`     | Teaching                                 |
+| `cv.html`           | Link to the CV PDF                       |
 
-- `Your Name`
-- the portrait alt text if you want it more specific
-- `[research area]`, `[specific topic]`, and research-interest phrases under the name
-- `[previous institution or degree]`
-- publication and preprint titles, links, and descriptions
-- teaching terms, course titles, office hours, and materials
-- the CV link text if desired
-- email, GitHub, Google Scholar, department profile, and office details
+Styles shared by all pages are in `assets/styles.css`.
 
-To add your photo, save a portrait image as:
+## Editing
 
-```text
-assets/headshot.jpg
-```
+Replace the bracketed placeholders (`[Title of Preprint]`, `[Course Title]`, …) in each page with your own content.
 
-Use a vertical or lightly cropped square image. The page will crop it neatly.
+- **Photo:** save a portrait as `assets/headshot.jpg`. Use a vertical or roughly square image; the page crops it to 4:5. Until then a placeholder is shown.
+- **CV:** save the PDF as `assets/cv.pdf`.
 
-To add a CV, save your PDF as:
+The bar at the top is copied into every page. To add a page, copy one of the existing pages, change its title and content, and add a link to it in the `<nav>` of **every** page. In each page, the link to that page itself has `aria-current="page"`, which underlines it in the bar.
 
-```text
-assets/cv.pdf
-```
+## Preview locally
 
-The existing "Download CV" button will then work automatically.
+Open `index.html` in a browser.
 
-## Preview Locally
+## Publishing
 
-Open `index.html` in a browser. Because the site is static, no local server is required.
+GitHub Pages serves this repository at `https://mariotomba.github.io/`. On a free GitHub account the repository must be public. In **Settings → Pages**, set **Source** to **Deploy from a branch**, branch `main`, folder `/ (root)`. Each push to `main` then updates the site within a minute or two.
 
-## Deploy With GitHub Pages
-
-1. Create a new GitHub repository, for example `academic-website`.
-2. Upload or commit these files to the repository.
-3. In GitHub, open **Settings** → **Pages**.
-4. Under **Build and deployment**, choose **GitHub Actions**.
-5. The included workflow in `.github/workflows/pages.yml` will publish the site after each push to `main`.
-
-Your site will usually be available at:
-
-```text
-https://YOUR-GITHUB-USERNAME.github.io/academic-website/
-```
-
-For a personal homepage at `https://YOUR-GITHUB-USERNAME.github.io/`, name the repository exactly `YOUR-GITHUB-USERNAME.github.io`.
-
-## File Structure
+## Files
 
 ```text
 .
 ├── index.html
+├── publications.html
+├── teaching.html
+├── cv.html
 ├── assets
-│   ├── main.js
-│   ├── headshot.jpg
-│   ├── headshot-placeholder.svg
-│   ├── kakeya-construction.png
-│   ├── kakeya-reference.png
+│   ├── headshot-placeholder.svg  (shown until headshot.jpg exists)
+│   ├── kakeya-construction.png   (logo next to the name)
+│   ├── main.js                   (fills in the year in the footer)
 │   └── styles.css
-├── .github
-│   └── workflows
-│       └── pages.yml
-├── .nojekyll
 └── README.md
 ```
