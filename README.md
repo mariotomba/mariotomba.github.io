@@ -41,7 +41,7 @@ GitHub Pages serves this repository at `https://mariotomba.github.io/`. On a fre
 ├── assets
 │   ├── headshot-placeholder.svg  (shown until headshot.jpg exists)
 │   ├── kakeya-construction.png   (logo next to the name)
-│   ├── main.js                   (fills in the year in the footer)
+│   ├── main.js                   (fills in the year and last-updated date in the footer)
 │   └── styles.css
 └── README.md
 ```
