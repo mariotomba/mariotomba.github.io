@@ -167,8 +167,6 @@ h3 {
   display: grid;
   gap: 14px;
   margin-top: 20px;
-  color: var(--muted);
-  font-size: 1.02rem;
 }
 
 .intro-text p {
