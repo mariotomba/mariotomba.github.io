@@ -18,6 +18,7 @@ Replace the bracketed placeholders (`[Title of Preprint]`, `[Course Title]`, …
 
 - **Photo:** save a portrait as `assets/headshot.jpg`. Use a vertical or roughly square image; the page crops it to 4:5. Until then a placeholder is shown.
 - **CV:** save the PDF as `assets/cv.pdf`. To update it, replace that file with the new version under the same name.
+- **Teaching:** courses are grouped by school and role, e.g. "University of Chicago — Teaching Assistant". For a new role, such as instructor of record, copy a whole `<section class="subsection">` block in `teaching.html`, give its `<h2>` a new `id` (and match it in `aria-labelledby`), change the role in the heading, and list the courses. For courses you teach yourself, drop the "Instructor:" line.
 
 The bar at the top is copied into every page. To add a page, copy one of the existing pages, change its title and content, and add a link to it in the `<nav>` of **every** page. In each page, the link to that page itself has `aria-current="page"`, which underlines it in the bar.
 
