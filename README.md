@@ -7,17 +7,19 @@ Personal academic website of Mario Tomba Morillo, PhD student in mathematics at 
 | File                | Content                                  |
 | ------------------- | ---------------------------------------- |
 | `index.html`        | Home: photo, introduction and email      |
-| `publications.html` | Publications and preprints               |
+| `research.html`     | Research: publications and preprints     |
 | `teaching.html`     | Teaching                                 |
+| `outreach.html`     | Outreach                                 |
 
 The CV link in the top bar opens `assets/cv.pdf` directly. Styles shared by all pages are in `assets/styles.css`.
 
 ## Editing
 
-- **Publications:** each paper is one `<li>` in `publications.html`, newest first. To add one, copy an existing `<li>` and change the title, coauthors, citation and the Journal/arXiv links. For a preprint, drop the citation text and the Journal link and keep arXiv.
+- **Research:** each paper is one `<li>` in `research.html`, newest first. To add one, copy an existing `<li>` and change the title, coauthors, citation and the arXiv link. For a preprint, write "Preprint, <year>." in place of the citation.
 - **Photo:** save a portrait as `assets/headshot.jpg`. Use a vertical or roughly square image; the page crops it to 4:5. Until then a placeholder is shown.
 - **CV:** save the PDF as `assets/cv.pdf`. To update it, replace that file with the new version under the same name.
 - **Teaching:** courses are grouped by school and role, e.g. "University of Chicago — Teaching Assistant". For a new role, such as instructor of record, copy a whole `<section class="subsection">` block in `teaching.html`, give its `<h2>` a new `id` (and match it in `aria-labelledby`), change the role in the heading, and list the courses. For courses you teach yourself, drop the "Instructor:" line.
+- **Outreach:** `outreach.html` lists outreach activities in the same format as Teaching. Each activity is one `<li>`: the activity, your role, and optionally the term on the right. Sub-bullets go in the `<ul class="entry-sublist">` inside an activity, one `<li>` each with a short `entry-note` and, optionally, a term (e.g. one per Directed Reading Program quarter, newest first).
 
 The bar at the top is copied into every page. To add a page, copy one of the existing pages, change its title and content, and add a link to it in the `<nav>` of **every** page. In each page, the link to that page itself has `aria-current="page"`, which underlines it in the bar.
 
@@ -34,8 +36,9 @@ GitHub Pages serves this repository at `https://mariotomba.github.io/`. On a fre
 ```text
 .
 ├── index.html
-├── publications.html
+├── research.html
 ├── teaching.html
+├── outreach.html
 ├── assets
 │   ├── cv.pdf                    (linked from the top bar; add it)
 │   ├── headshot-placeholder.svg  (shown until headshot.jpg exists)
