@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
-  <title id="title">Headshot placeholder</title>
-  <desc id="description">A simple placeholder for a portrait photograph.</desc>
-  <rect width="800" height="1000" fill="#eee8dc"/>
-  <rect x="64" y="64" width="672" height="872" fill="#fbfaf7" stroke="#ddd6cc" stroke-width="4"/>
-  <circle cx="400" cy="350" r="122" fill="#d8cec0"/>
-  <path d="M210 780c22-150 132-236 190-236s168 86 190 236" fill="#d8cec0"/>
-  <text x="400" y="900" fill="#5f6b68" font-family="Georgia, serif" font-size="42" text-anchor="middle">Add headshot.jpg</text>
-</svg>
